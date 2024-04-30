@@ -4,11 +4,9 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ContrastIcon from "@mui/icons-material/Contrast";
 import { styled, alpha } from "@mui/material/styles";
@@ -83,13 +81,12 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" color="primary" elevation={0} sx={{py: '1rem'}}>
+    <AppBar position="static" color="primary" elevation={0} sx={{py: '0.75rem'}}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <ContrastIcon
-            color="inherit"
             fontSize="large"
-            sx={{ display: { xs: "none", md: "flex" }, mr: "8rem", width: '50px', height: '50px' }}
+            sx={{ display: { xs: "none", md: "flex" }, mr: "8rem", width: '50px', height: '50px', color: 'black' }}
           />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton

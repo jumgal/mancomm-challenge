@@ -1,11 +1,17 @@
-import React from 'react'
+import Typography from "@mui/material/Typography";
+import ButtonLink from "../components/buttons/ButtonLink";
 
-type Props = {}
+type Props = {};
 
 const OverviewPage = (props: Props) => {
   return (
-    <div>OverviewPage</div>
-  )
-}
+    <div>
+      <Typography variant="h6">OverviewPage</Typography>
+      <ButtonLink to="/" variant="text">
+        Home Page
+      </ButtonLink>
+    </div>
+  );
+};
 
-export default OverviewPage
+export default OverviewPage;

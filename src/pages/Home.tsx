@@ -1,17 +1,15 @@
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
 import ResponsiveAppBar from "../components/header/ResponsiveAppBar";
+import MainDashboard from "../components/dashboard/MainDashboard";
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <Grid
       container
       direction={{ xs: "column", md: "row" }}
-      height={{ md: "90vh" }}
-      sx={{ marginTop: "2rem" }}
+      sx={{
+        marginTop: "1rem",
+      }}
     >
       <Grid
         item
@@ -19,9 +17,11 @@ const Home = (props: Props) => {
         md={8}
         sx={{
           backgroundColor: "mainColor.light",
+          padding: '1rem'
         }}
       >
         <ResponsiveAppBar />
+        <MainDashboard />
       </Grid>
       <Grid
         item
@@ -31,7 +31,7 @@ const Home = (props: Props) => {
           backgroundColor: "#fff",
         }}
       >
-        Right
+        Righttttt
       </Grid>
     </Grid>
   );

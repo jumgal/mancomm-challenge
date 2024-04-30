@@ -1,11 +1,17 @@
-import React from 'react'
+import Typography from "@mui/material/Typography";
+import ButtonLink from "../components/buttons/ButtonLink";
 
-type Props = {}
+type Props = {};
 
 const ReportsPage = (props: Props) => {
   return (
-    <div>ReportsPage</div>
-  )
-}
+    <div>
+      <Typography variant="h6"> Reports Page</Typography>
+      <ButtonLink to="/" variant="contained">
+        Home Page
+      </ButtonLink>
+    </div>
+  );
+};
 
-export default ReportsPage
+export default ReportsPage;
