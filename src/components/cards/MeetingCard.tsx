@@ -53,8 +53,17 @@ const MeetingCard = () => {
             08
           </Box>
         </Box>
-        <Box sx={{ border: "1px solid yellow", borderRadius: '50%', display: 'flex', alignItems: 'center', background: 'yellow' }}>
-          <ArrowOutwardIcon color="info"/>
+        <Box
+          sx={{
+            border: "1px solid yellow",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            background: "yellow",
+            padding: ".25rem 0.5rem"
+          }}
+        >
+          <ArrowOutwardIcon color="info" />
         </Box>
       </Stack>
     </Box>
