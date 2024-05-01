@@ -2,9 +2,8 @@ import { Link as RouterLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import { Link } from "@mui/material";
 import { manageSelectValues } from "./data/selectValues";
-type Props = {};
 
-const DashboardNav = (props: Props) => {
+const DashboardNav = () => {
   return (
     <Box sx={{ flexGrow: 1, display: 'flex' }}>
       {manageSelectValues.map(({ value, label }) => (

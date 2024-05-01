@@ -1,14 +1,20 @@
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import CardComponent from "./CardComponent";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import TripOriginIcon from "@mui/icons-material/TripOrigin";
 
 const MultipleCards = () => {
-  const [earnings, setEarnings] = useState<number>(2890);
-  const [balance, setBalance] = useState<number>(2);
+  const [earnings, setEarnings] = useState<number>(0);
+  const [balance, setBalance] = useState<number>(0);
+
+
+  useEffect(() => {
+     setEarnings(2890)
+     setBalance(2)
+  },[])
   const keyboardUpIcon = (
     <KeyboardDoubleArrowUpIcon
       color={earnings >= 2890 ? "success" : "error"}

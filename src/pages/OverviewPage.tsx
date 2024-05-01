@@ -1,9 +1,7 @@
 import Typography from "@mui/material/Typography";
 import ButtonLink from "../components/buttons/ButtonLink";
 
-type Props = {};
-
-const OverviewPage = (props: Props) => {
+const OverviewPage = () => {
   return (
     <div>
       <Typography variant="h6">OverviewPage</Typography>
