@@ -1,11 +1,16 @@
-import React from 'react'
+import { Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import ButtonLink from "../components/buttons/ButtonLink";
 
-type Props = {}
-
-const BookingPage = (props: Props) => {
+const BookingPage = () => {
   return (
-    <div>BookingPage</div>
-  )
-}
+    <Box>
+      <Typography variant="h6">Booking Page</Typography>
+      <ButtonLink variant="text" to="/" color="secondary">
+        Go to Dashboard
+      </ButtonLink>
+    </Box>
+  );
+};
 
-export default BookingPage
+export default BookingPage;

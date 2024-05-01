@@ -34,7 +34,7 @@ const theme: ThemeOptions = createTheme({
   },
   palette: {
     background: {
-      default: bgColor,
+      default: bgColor
     },
     mainColor: {
       dark: "#009688",

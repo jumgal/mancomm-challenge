@@ -20,11 +20,10 @@ function ButtonLink({ to, children, variant, color = "primary" }: IButtonLink) {
     <RouterLink to={to}>
       <Button
         sx={{
-          color: "#fff",
+          color: "mainColor.dark",
           "&:hover": {
-            color: "#4ee1a0",
+            color: "success",
           },
-          borderBottom: '0.2rem solid #4ee1a0'
         }}
         variant={variant}
         color={color}

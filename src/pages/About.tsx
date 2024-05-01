@@ -1,11 +1,16 @@
-import React from 'react'
+import { Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import ButtonLink from "../components/buttons/ButtonLink";
 
-type Props = {}
-
-const About = (props: Props) => {
+const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <Box>
+      <Typography variant="h6">About Page</Typography>
+      <ButtonLink variant="text" to="/" color="secondary">
+        Go to Dashboard
+      </ButtonLink>
+    </Box>
+  );
+};
 
-export default About
+export default About;

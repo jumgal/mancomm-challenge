@@ -17,7 +17,7 @@ function MainDashboard() {
       >
         <Box
           sx={{
-            typography: { xs: "h6", md: "h5" },
+            typography: { xs: "h6", md: "h4" },
             color: "black",
           }}
         >

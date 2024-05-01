@@ -6,7 +6,7 @@ function CardMediaComponent() {
     <Box>
       <CardMedia
         component="img"
-        image="./src/assets/images/city-image.jpg"
+        image="./images/city-image.jpg"
         alt="City Picture"
         sx={{
           maxHeight: "350px",

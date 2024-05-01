@@ -1,6 +1,10 @@
 import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
 import ResponsiveAppBar from "../components/header/ResponsiveAppBar";
 import MainDashboard from "../components/dashboard/MainDashboard";
+import ActiveBookings from "../components/booking/ActiveBookings";
+import SimpleDatePicker from "../components/calendar/SimpeDatePicker";
+import LeftCalendarAppBar from "../components/header/LeftCalendarAppBar";
 
 const Home = () => {
   return (
@@ -17,11 +21,12 @@ const Home = () => {
         md={8}
         sx={{
           backgroundColor: "mainColor.light",
-          padding: '1rem'
+          padding: "1rem",
         }}
       >
         <ResponsiveAppBar />
         <MainDashboard />
+        <ActiveBookings />
       </Grid>
       <Grid
         item
@@ -31,7 +36,15 @@ const Home = () => {
           backgroundColor: "#fff",
         }}
       >
-        Righttttt
+        <Stack
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+          sx={{ width: "100%", paddingX: "1rem" }}
+        >
+          <LeftCalendarAppBar />
+          <SimpleDatePicker />
+        </Stack>
       </Grid>
     </Grid>
   );

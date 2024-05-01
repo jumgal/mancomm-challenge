@@ -5,6 +5,7 @@ import CardMediaComponent from "../cards/CardMediaComponent";
 import SimpleLineChart from "../charts/SimpleLineChart";
 import CouponCard from "../cards/CouponCard";
 import MultipleCards from "../cards/MultipleCards";
+import MeetingCard from "../cards/MeetingCard";
 
 const DashboardImageSection = () => {
   return (
@@ -15,7 +16,7 @@ const DashboardImageSection = () => {
           flexDirection="row"
           justifyContent="flex-start"
           alignItems="center"
-          sx={{ width: "100%" }}
+          sx={{ width: "100%", marginTop: '0.5rem' }}
         >
           <SimpleLineChart title="Today's Earnings" payload="$2890" />
           <CardComponent title="Demographics" payload="20" bgColor="#ffc400" />
@@ -27,6 +28,7 @@ const DashboardImageSection = () => {
       </Grid>
       <Grid item xs={12} md={3}>
         <MultipleCards />
+        <MeetingCard />
       </Grid>
     </Grid>
   );
