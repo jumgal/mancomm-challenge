@@ -16,7 +16,7 @@ export default function LeftCalendarAppBar() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <AppBar position="static" color="transparent" elevation={0}>
+      <AppBar position="static" color="transparent" elevation={0} sx={{py: '0.75rem', marginTop: '1rem'}}>
         <Toolbar>
           <Box sx={{ display: "flex", flexGrow: 1 }}>
             <IconButton
